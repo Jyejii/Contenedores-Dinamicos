@@ -12,7 +12,7 @@ int main() {
     std::cout << std::endl;
     pila.push(6.4);
     pila.push(7.9);
-    std::cout << "Pila despues de push:" << std::endl;
+    std::cout << "Pila despues de push: " << std::endl;
     while (!pila.empty()) {
         std::cout << pila.top() << " ";
         pila.pop();
