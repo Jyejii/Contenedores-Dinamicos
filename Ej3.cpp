@@ -13,7 +13,7 @@ int main() {
     auto max_element_iter = std::max_element(numeros.begin(), numeros.end());
 
     if (max_element_iter != numeros.end()) {
-        std::cout << "El elemento más grande del vector es: " << *max_element_iter << std::endl;
+        std::cout << "El elemento mas grande del vector es: " << *max_element_iter << std::endl;
     } else {
         std::cout << "El vector está vacío." << std::endl;
     }
