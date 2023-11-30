@@ -2,18 +2,44 @@
 #include <valarray>
 
 int main() {
-    std::valarray<double> valores = {1.0, 2.0, 3.0, 4.0, 5.0};
+    std::valarray<double> valores = {1.5, 2.5, 3.3, 4.5, 5.5};
 
     std::cout << "Suma: " << valores.sum() << std::endl;
-    std::cout << "Media: " << valores.sum() / valores.size() << std::endl;
 
-    valores += 5.0;
+    double media = valores.sum() / valores.size();
+    std::cout << "Media: " << media << std::endl;
 
-    std::cout << "Valores + 5.0: ";
-    for(double valor : valores) {
+    valores += 5.5;
+    std::cout << "Valores + 5.5: ";
+    for (double valor : valores) {
+        std::cout << valor << " ";
+    }
+    std::cout << std::endl;
+
+    valores -= 2.5;
+    std::cout << "Valores - 2.5: ";
+    for (double valor : valores) {
+        std::cout << valor << " ";
+    }
+    std::cout << std::endl;
+
+    valores *= 3.3;
+    std::cout << "Valores * 3.3: ";
+    for (double valor : valores) {
+        std::cout << valor << " ";
+    }
+    std::cout << std::endl;
+
+    valores /= 1.5;
+    std::cout << "Valores / 1.5: ";
+    for (double valor : valores) {
         std::cout << valor << " ";
     }
     std::cout << std::endl;
 
     return 0;
 }
+
+
+
+
