@@ -9,3 +9,15 @@ int main() {
         std::cout << pila.top() << " ";
         pila.pop();
     }
+    std::cout << std::endl;
+    pila.push(6.4);
+    pila.push(7.9);
+    std::cout << "Pila después de push:" << std::endl;
+    while (!pila.empty()) {
+        std::cout << pila.top() << " ";
+        pila.pop();
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
