@@ -8,4 +8,16 @@ int main() {
     std::cout << "Vector ordenado: ";
     for (const auto& num : numeros) {
         std::cout << num << " ";
+    }
+    std::cout << std::endl;
+    auto max_element_iter = std::max_element(numeros.begin(), numeros.end());
+
+    if (max_element_iter != numeros.end()) {
+        std::cout << "El elemento más grande del vector es: " << *max_element_iter << std::endl;
+    } else {
+        std::cout << "El vector está vacío." << std::endl;
+    }
+
+    return 0;
+}
 
